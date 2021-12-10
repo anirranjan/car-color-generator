@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Color Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to the Car Color Generator</h1>
+      <p>
+        This generator will pick out a random paint and wheel color combination
+        for your car.
+      </p>
+      <p id="paint-color"></p>
+      <p id="wheel-color"></p>
+    </div>
+
+    <div class="searchContainer">
+      <h2>Search for Cars with Matching Colors</h2>
+      <form method="get" action="https://images.google.com/images" target="_blank">
+        <input type="text" id="query" name="q" placeholder="Search Images" required/>
+        <input type="submit" value="Search" />
+      </form>
+    </div>
+
+    <div class="container">
+      <Button onclick="getSpec()" class="button">Get Another Color Specification</Button>
+      <footer>
+        Made with TLC by Nirranjan
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
